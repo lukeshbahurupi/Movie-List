@@ -25,7 +25,7 @@ function AddMovie(props) {
     <form onSubmit={submitHandler}>
       <div className={classes.control}>
         <label htmlFor="title">Title</label>
-        <input type="text" id="title" ref={titleRef} />
+        <input type="file" id="title" ref={titleRef} />
       </div>
       <div className={classes.control}>
         <label htmlFor="opening-text">Opening Text</label>
