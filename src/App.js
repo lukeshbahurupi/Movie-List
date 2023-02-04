@@ -16,7 +16,7 @@ function App() {
     setError(null);
     try {
       const response = await fetch(
-        "https://update-delete-cce11-default-rtdb.firebaseio.com/movies.json"
+        "https://movie-list-779de-default-rtdb.firebaseio.com/movies.json"
       );
 
       if (!response.ok) {
@@ -58,7 +58,7 @@ function App() {
   async function addMovieHandler(movie) {
     // console.log(movie);
     const response = await fetch(
-      "https://update-delete-cce11-default-rtdb.firebaseio.com/movies.json",
+      "https://movie-list-779de-default-rtdb.firebaseio.com/movies.json",
       {
         mode: "no-cors",
         method: "POST",
